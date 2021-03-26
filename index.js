@@ -3,6 +3,9 @@ const app = express();
 const handlebars = require('express-handlebars');
 const bodyParser = require('body-parser');
 const Tarefa = require('./models/Tarefa');
+//var popupS = require('popups');
+const alertNode = require("alert");
+
 
 //CONFIG
     //Template Engine - handlebars
@@ -44,6 +47,36 @@ app.get('/visualizar', function(req, res){
     })
     
 })
+
+//excluido tarefas
+app.get('/delete/:id', function(req, res){
+    Tarefa.destroy({where: {id: req.params.id}}).then(function(){
+        res.redirect('/visualizar');
+    }).catch(function(erro){
+        res.send("HOUVE UM ERRO");
+    })
+})
+
+app.get('/editar', function(req, res){
+    res.render('editarFormulario');
+})
+
+//update nas tarefas
+app.post('/editar/:id', function(req, res){
+    Tarefa.update({
+        titulo: req.body.editaTitulo,
+        conteudo: req.body.editaConteudo,
+        dataDeEntrega: req.body.editaDataEntrega
+    },{where:{
+        id: req.body.editaNumeroTarefa
+    }}).then(function(){
+        res.redirect('/visualizar');
+        alertNode("Tarefa editada com sucesso");
+    }).catch(function(erro){
+        res.send("HOUVE UM ERRO :"+erro);
+    })
+})
+
 
 app.listen(8081, function(){
     console.log("Servidor rodando na porta 8081");
