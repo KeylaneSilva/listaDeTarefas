@@ -1,0 +1,17 @@
+<h1>EDITAR TAREFA</h1>
+<hr>
+<form action='/editar/:id' method="post">
+    <p>Qual tarefa deseja editar :</p>
+    <input type="number" name="editaNumeroTarefa">
+    <p>Titulo</p>
+    <input type="text" name="editaTitulo">
+    <p>Conteudo</p>
+    <textarea name="editaConteudo" cols="30" rows="10"></textarea>
+    <p>Data de entrega</p>
+    <input type="date" name="editaDataEntrega">
+    <br>
+    <br>
+    <button type="submit">Editar</button>
+    <button><a href="/">Voltar</a></button>
+</form>
+
