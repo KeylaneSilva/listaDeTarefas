@@ -1,10 +1,11 @@
 <h1 align="center">Suas tarefas</h1>
-
+ <button><a href="/">Página princiapal</a></button>
 {{#each tarefas}}
 
     <h2 align="center">{{dataValues.titulo}}</h2><br>
     <h3 align="center">{{dataValues.conteudo}}</h3><br>
     <h3 align="center">{{dataValues.dataDeEntrega}}</h3><br>
+    <a href="/delete/{{dataValues.id}}"><button>Excluir tarefa</button></a>
     <hr>
 
 {{/each}}
