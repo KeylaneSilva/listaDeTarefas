@@ -3,9 +3,8 @@ const app = express();
 const handlebars = require('express-handlebars');
 const bodyParser = require('body-parser');
 const Tarefa = require('./models/Tarefa');
-//var popupS = require('popups');
 const alertNode = require("alert");
-
+const path = require('path');
 
 //CONFIG
     //Template Engine - handlebars
@@ -15,6 +14,9 @@ const alertNode = require("alert");
     //Body-Parser
     app.use(bodyParser.urlencoded({extended: false}))
     app.set(bodyParser.json())
+
+    //Public
+    app.use(express.static(path.join(__dirname, "public")))
 
 
 app.get('/', function(req, res){
@@ -52,6 +54,7 @@ app.get('/visualizar', function(req, res){
 app.get('/delete/:id', function(req, res){
     Tarefa.destroy({where: {id: req.params.id}}).then(function(){
         res.redirect('/visualizar');
+        alertNode("TAREFA EXCLUIDA COM SUCESSO");
     }).catch(function(erro){
         res.send("HOUVE UM ERRO");
     })
@@ -71,7 +74,7 @@ app.post('/editar/:id', function(req, res){
         id: req.body.editaNumeroTarefa
     }}).then(function(){
         res.redirect('/visualizar');
-        alertNode("Tarefa editada com sucesso");
+       alertNode("TAREFA EDITADA COM SUCESSO");
     }).catch(function(erro){
         res.send("HOUVE UM ERRO :"+erro);
     })
