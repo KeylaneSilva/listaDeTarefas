@@ -1,15 +1,39 @@
-<h1>CADASTRAR TAREFA</h1>
-<hr>
-<form action='/add' method="post">
-    <p>Titulo</p>
-    <input type="text" name="titulo">
-    <p>Conteudo</p>
-    <textarea name="conteudo" cols="30" rows="10"></textarea>
-    <p>Data de entrega</p>
-    <input type="date" name="dataEntrega">
-    <br>
-    <br>
-    <button type="submit">Cadastrar</button>
-    <button><a href="/">Voltar</a></button>
-</form>
+<nav class="navbar navbar-dark bg-dark">
+  <div class="container-fluid">
+    <span class="navbar-brand mb-0 h1">Cadastrar tarefas</span>
+  </div>
+</nav>
+<br>
 
+<div class="conteiner">
+    <div class="row">
+        <div class="col">
+        </div>
+        <div class="col-6">
+            <form action='/add' method="post">
+                <div class="mb-3">
+                <label  class="form-label">Titulo</label>
+                <input type="text" class="form-control" name="titulo" id="exampleFormControlInput1" >
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Conteudo</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" name="conteudo" rows="3"></textarea>
+            </div>
+            <div class="form-group row">
+                <label for="example-date-input" class="col-2 col-form-label">Data de entrega</label>
+                <div class="col-10">
+                    <input class="form-control" type="date" value="2011-08-19" id="example-date-input" name="dataEntrega">
+                </div>
+            </div>
+            <br><br>
+            <button type="submit">Cadastrar</button>
+            <button><a href="/">Voltar</a></button>
+            </form>
+
+            
+        </div>
+        
+        <div class="col">
+        </div>
+    </div>
+</div>
