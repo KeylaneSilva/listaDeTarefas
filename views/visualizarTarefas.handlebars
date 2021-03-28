@@ -1,11 +1,30 @@
-<h1 align="center">Suas tarefas</h1>
- <button><a href="/">Página princiapal</a></button>
+<nav class="navbar navbar-dark bg-dark">
+  <div class="container-fluid">
+    <span class="navbar-brand mb-0 h1">Suas tarefas</span>
+  </div>
+</nav>
+<br>
+
+<a href="/" class="btn btn-primary" role="button" aria-pressed="true">Voltar</a>
+
 {{#each tarefas}}
 
-    <h2 align="center">{{dataValues.titulo}}</h2><br>
-    <h3 align="center">{{dataValues.conteudo}}</h3><br>
-    <h3 align="center">{{dataValues.dataDeEntrega}}</h3><br>
-    <a href="/delete/{{dataValues.id}}"><button>Excluir tarefa</button></a>
-    <hr>
-
+    <div class="conteiner">
+        <div class="row">
+            <div class="col-sm-3">
+                
+            </div>
+            <div class="col-sm-6" align="center">
+                <h2 align="center">{{dataValues.titulo}}</h2><br>
+                <h3 align="center">{{dataValues.conteudo}}</h3><br>
+                <h3 align="center">{{dataValues.dataDeEntrega}}</h3><br>
+                <a href="/delete/{{dataValues.id}}"><button class="btn btn-success">Feito</button></a>
+                <hr>
+            </div>
+            <div class="col-sm-3">
+            
+            </div>
+        </div>
+    </div>
 {{/each}}
+
