@@ -5,7 +5,6 @@ const bodyParser = require('body-parser');
 const Tarefa = require('./models/Tarefa');
 const alertNode = require("alert");
 const path = require('path');
-const moment = require("moment");
 
 //CONFIG
     //Template Engine - handlebars
@@ -82,6 +81,6 @@ app.post('/editar/:id', function(req, res){
     })
 })
 
-app.listen(8081, function(){
+app.listen(process.env.PORT, function(){
     console.log("Servidor rodando na porta 8081");
 })
