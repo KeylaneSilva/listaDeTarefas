@@ -1,17 +1,41 @@
-<h1>EDITAR TAREFA</h1>
-<hr>
-<form action='/editar/:id' method="post">
-    <p>Qual tarefa deseja editar :</p>
-    <input type="number" name="editaNumeroTarefa">
-    <p>Titulo</p>
-    <input type="text" name="editaTitulo">
-    <p>Conteudo</p>
-    <textarea name="editaConteudo" cols="30" rows="10"></textarea>
-    <p>Data de entrega</p>
-    <input type="date" name="editaDataEntrega">
-    <br>
-    <br>
-    <button type="submit">Editar</button>
-    <button><a href="/">Voltar</a></button>
-</form>
+<nav class="navbar navbar-dark bg-dark">
+  <div class="container-fluid">
+    <span class="navbar-brand mb-0 h1">Editar tarefas</span>
+  </div>
+</nav>
+<br>
 
+<div class="conteiner">
+    <div class="row">
+        <div class="col">
+        </div>
+        <div class="col-6">
+            <form action='/editar/:id' method="post">
+                <div class="mb-3">
+                    <label class="form-label">Digite a tarefa que deseja editar</label>
+                    <input type="number" class="form-control" name="editaNumeroTarefa" required>
+                </div>
+                <div class="mb-3">
+                    <label  class="form-label">Titulo</label>
+                    <input type="text" class="form-control" name="editaTitulo"  >
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Conteudo</label>
+                    <textarea class="form-control" name="editaConteudo" rows="3"></textarea>
+                </div>
+                <div class="form-group row">
+                    <label for="example-date-input" class="col-2 col-form-label">Data de entrega</label>
+                    <div class="col-10">
+                    <input class="form-control" type="date" value="2021-03-28" name="editaDataEntrega">
+                    </div>
+                </div>
+                <br><br>
+                <button class="btn btn-success" type="submit">Editar</button>
+                <a href="/" class="btn btn-primary" role="button" aria-pressed="true">Voltar</a>
+            </form>
+         </div>
+        
+        <div class="col">
+        </div>
+    </div>
+</div>
