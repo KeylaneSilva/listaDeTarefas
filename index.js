@@ -5,6 +5,7 @@ const bodyParser = require('body-parser');
 const Tarefa = require('./models/Tarefa');
 const alertNode = require("alert");
 const path = require('path');
+const moment = require("moment");
 
 //CONFIG
     //Template Engine - handlebars
@@ -27,6 +28,7 @@ app.get('/', function(req, res){
 app.get('/cad', function(req, res){
     res.render('formulario');
 })
+
 
 app.post('/add', function(req, res){
     //inserindo os dados no db
@@ -79,7 +81,6 @@ app.post('/editar/:id', function(req, res){
         res.send("HOUVE UM ERRO :"+erro);
     })
 })
-
 
 app.listen(8081, function(){
     console.log("Servidor rodando na porta 8081");
