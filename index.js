@@ -81,6 +81,6 @@ app.post('/editar/:id', function(req, res){
     })
 })
 
-app.listen(process.env.PORT, function(){
+app.listen(8081, function(){
     console.log("Servidor rodando na porta 8081");
 })
