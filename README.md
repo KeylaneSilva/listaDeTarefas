@@ -18,7 +18,8 @@
 <h2 align="center"> Status do projeto </h2>
 
 <h4  id="status" align="center"> 
-	🚧  Todo list to day 🚀 Em construção...  🚧
+	:green_circle:  Todo list to day 🚀 Finalizado :green_circle:
+
 </h4>
 
 <h2 align="center" id="features"> Features </h2>
@@ -41,6 +42,19 @@ Além disto é bom ter um editor para trabalhar com o código como [VSCode](http
 <h2 align="center" id="tecnologias"> 🛠 Tecnologias </h2>
 
 As seguintes ferramentas foram usadas na construção do projeto:
+
+<p>Back-end</p>
+<img src="public/img/nodejs.png" width="150px">
+<img src="public/img/express.png" width="200px">
+
+
+<p>Front-end</p>
+<img src="public/img/bootstrap-stack.png" width="150px">
+
+<p>Banco de dados</p>
+
+<img src="public/img/mySQL1.png" width="200px">
+
 
 <h2 align="center" id="features"> Autora </h2>
 
