@@ -12,7 +12,7 @@
  	 👉<a href="#features"> Features</a><br>
  	 👉<a href="#demonstracao"> Demonstracao</a><br>
  	 👉<a href="#tecnologias"> Tecnologia</a><br>
- 	 👉<a href="#autor"> Autor</a>
+ 	 👉<a href="#autor"> Autora</a>
 </p>
 
 <h2 align="center"> Status do projeto </h2>
@@ -32,12 +32,7 @@
 
 <h2 align="center" id="demonstracao"> Demosntração da aplicação </h2>
 
-<h2 align="center" id="pre-requisitos"> Pré requisitos </h2>
-
-
-Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
-[Git](https://git-scm.com), [Node.js](https://nodejs.org/en/). 
-Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
+link da aplicação: https://rocky-chamber-38899.herokuapp.com/
 
 <h2 align="center" id="tecnologias"> 🛠 Tecnologias </h2>
 
@@ -56,7 +51,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 <img src="public/img/mySQL1.png" width="200px">
 
 
-<h2 align="center" id="features"> Autora </h2>
+<h2 align="center" id="autor"> Autora </h2>
 
 <p align="center">Feito com ❤️ por Keylane Silva 👋🏽 Entre em contato! </p>
 
