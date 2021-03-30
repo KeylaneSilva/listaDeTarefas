@@ -42,14 +42,12 @@ As seguintes ferramentas foram usadas na construção do projeto:
 <img src="public/img/nodejs.png" width="150px">
 <img src="public/img/express.png" width="200px">
 
-
 <p>Front-end</p>
 <img src="public/img/bootstrap-stack.png" width="150px">
 
 <p>Banco de dados</p>
 
 <img src="public/img/mySQL1.png" width="200px">
-
 
 <h2 align="center" id="autor"> Autora </h2>
 
